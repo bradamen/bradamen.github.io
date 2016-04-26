@@ -83,7 +83,7 @@
 <meta name="description" content="在onCreate方法中添加
 12ActionBar actionBar = getSupportActionBar();actionBar.setDisplayHomeAsUpEnabled(true);
 给返回按钮添加返回上一页面的点击事件：
-12345678@Override  	public boolean onOptionsItemSelected(MenuItem item) &amp;#12">
+12345678@Overridepublic boolean onOptionsItemSelected(MenuItem item) &amp;#123;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="在actionbar添加返回按钮">
 <meta property="og:url" content="http://bradamen.com/2016/04/26/在actionbar添加返回按钮/index.html">
@@ -91,14 +91,14 @@
 <meta property="og:description" content="在onCreate方法中添加
 12ActionBar actionBar = getSupportActionBar();actionBar.setDisplayHomeAsUpEnabled(true);
 给返回按钮添加返回上一页面的点击事件：
-12345678@Override  	public boolean onOptionsItemSelected(MenuItem item) &amp;#12">
-<meta property="og:updated_time" content="2016-04-26T15:55:37.920Z">
+12345678@Overridepublic boolean onOptionsItemSelected(MenuItem item) &amp;#123;">
+<meta property="og:updated_time" content="2016-04-26T16:01:09.202Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="在actionbar添加返回按钮">
 <meta name="twitter:description" content="在onCreate方法中添加
 12ActionBar actionBar = getSupportActionBar();actionBar.setDisplayHomeAsUpEnabled(true);
 给返回按钮添加返回上一页面的点击事件：
-12345678@Override  	public boolean onOptionsItemSelected(MenuItem item) &amp;#12">
+12345678@Overridepublic boolean onOptionsItemSelected(MenuItem item) &amp;#123;">
 
 
 
@@ -293,7 +293,7 @@
         <p>在onCreate方法中添加</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ActionBar actionBar = getSupportActionBar();</span><br><span class="line">actionBar.setDisplayHomeAsUpEnabled(<span class="keyword">true</span>);</span><br></pre></td></tr></table></figure>
 <p>给返回按钮添加返回上一页面的点击事件：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Override</span></span><br><span class="line">  	<span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">onOptionsItemSelected</span><span class="params">(MenuItem item)</span> </span>&#123;</span><br><span class="line">       <span class="keyword">if</span> (item.getItemId() == android.R.id.home) &#123;</span><br><span class="line">		finish();</span><br><span class="line">		<span class="comment">//or something</span></span><br><span class="line">		<span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="keyword">super</span>.onOptionsItemSelected(item);</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">onOptionsItemSelected</span><span class="params">(MenuItem item)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (item.getItemId() == android.R.id.home) &#123;</span><br><span class="line">		finish();</span><br><span class="line">		<span class="comment">//or something</span></span><br><span class="line">		<span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="keyword">super</span>.onOptionsItemSelected(item);</span><br></pre></td></tr></table></figure>
       
     </div>
     

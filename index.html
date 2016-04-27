@@ -286,8 +286,7 @@
 
       
         
-          
-            <p>在新版本的android sdk中，谷歌为开发者们带来了很多好用的东西，比如原生抽屉布局，下拉刷新等等，对很不乐意去网上找各种各样乱七八糟的第三方控件的某人真是挺不错的。</p>
+          <p>在新版本的android sdk中，谷歌为开发者们带来了很多好用的东西，比如原生抽屉布局，下拉刷新等等，对很不乐意去网上找各种各样乱七八糟的第三方控件的某人真是挺不错的。</p>
 <p>获取NavigationView的中的控件出现空指针异常</p>
 <p>我们在Navigation Drawer Activity中获取控件，第一反应就是直接在onCreateView里调用findViewById,例如我想获取上图中的TextView，假如id为tv_user</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">TextView tv = (TextView)findViewById(R.id.tv_user);</span><br></pre></td></tr></table></figure>
@@ -320,15 +319,12 @@
         app:menu=&quot;@menu/activity_main_drawer&quot; /&gt;
 
 &lt;/android.support.v4.widget.DrawerLayout&gt;
-</code></pre><p>其实这里的NavigationView就是左边抽屉拉出来后的布局了~可以看到它有两个属性app:headerLayout和app:menu<br>其实这两个属性后面就分别是上图中蓝色背景部分的抽屉头和下面的菜单。要对其编辑也很简单，进入ID对应的布局修改即可</p>
-<p>操作1：</p>
-<p>前面提到的获取不到控件的方法，可以在onCreate方法中这样来获取</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">View headerLayout = navigationView.inflateHeaderView(R.layout.nav_header_main);</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tv_nav_user = (TextView)headerLayout.findViewById(R.id.tv_nav_username);</span><br></pre></td></tr></table></figure>
-<p>操作2</p>
-<p>解决方法也很简单，就是在layout文件中去掉</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">app:headerLayout=&quot;@layout/nav_header_main&quot;</span><br></pre></td></tr></table></figure>
-          
+</code></pre>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/04/27/Android自带抽屉布局及NavigationView的使用/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
         
       
     </div>

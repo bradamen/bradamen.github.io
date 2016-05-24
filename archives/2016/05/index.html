@@ -80,25 +80,15 @@
 
 
 
-<meta name="description" content="在onCreate方法中添加
-12ActionBar actionBar = getSupportActionBar();actionBar.setDisplayHomeAsUpEnabled(true);
-给返回按钮添加返回上一页面的点击事件：
-12345678@Overridepublic boolean onOptionsItemSelected(MenuItem item) &amp;#123;">
-<meta property="og:type" content="article">
-<meta property="og:title" content="在actionbar添加返回按钮">
-<meta property="og:url" content="http://bradamen.com/2016/04/26/在actionbar添加返回按钮/index.html">
+<meta name="description" content="人的一切痛苦，本质上都是对自己无能的愤怒。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="bradamen">
+<meta property="og:url" content="http://bradamen.com/archives/2016/05/index.html">
 <meta property="og:site_name" content="bradamen">
-<meta property="og:description" content="在onCreate方法中添加
-12ActionBar actionBar = getSupportActionBar();actionBar.setDisplayHomeAsUpEnabled(true);
-给返回按钮添加返回上一页面的点击事件：
-12345678@Overridepublic boolean onOptionsItemSelected(MenuItem item) &amp;#123;">
-<meta property="og:updated_time" content="2016-04-26T16:01:09.202Z">
+<meta property="og:description" content="人的一切痛苦，本质上都是对自己无能的愤怒。">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="在actionbar添加返回按钮">
-<meta name="twitter:description" content="在onCreate方法中添加
-12ActionBar actionBar = getSupportActionBar();actionBar.setDisplayHomeAsUpEnabled(true);
-给返回按钮添加返回上一页面的点击事件：
-12345678@Overridepublic boolean onOptionsItemSelected(MenuItem item) &amp;#123;">
+<meta name="twitter:title" content="bradamen">
+<meta name="twitter:description" content="人的一切痛苦，本质上都是对自己无能的愤怒。">
 
 
 
@@ -116,7 +106,7 @@
   };
 </script>
 
-  <title> 在actionbar添加返回按钮 | bradamen </title>
+  <title> Archive | bradamen </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en">
@@ -137,7 +127,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left page-post-detail ">
+  <div class="container one-collumn sidebar-position-left  page-archive  ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -229,120 +219,66 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-expand">
+  <section id="posts" class="posts-collapse">
+    <span class="archive-move-on"></span>
+
+    <span class="archive-page-counter">
+      
+      
+      
+        
+      
+      Um..! 5 posts in total. Keep on posting.
+    </span>
+
     
 
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                在actionbar添加返回按钮
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2016-04-26T23:37:16+08:00" content="2016-04-26">
-              2016-04-26
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
+      
       
       
 
-      
-        <p>在onCreate方法中添加</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ActionBar actionBar = getSupportActionBar();</span><br><span class="line">actionBar.setDisplayHomeAsUpEnabled(<span class="keyword">true</span>);</span><br></pre></td></tr></table></figure>
-<p>给返回按钮添加返回上一页面的点击事件：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">onOptionsItemSelected</span><span class="params">(MenuItem item)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (item.getItemId() == android.R.id.home) &#123;</span><br><span class="line">		finish();</span><br><span class="line">		<span class="comment">//or something</span></span><br><span class="line">		<span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="keyword">super</span>.onOptionsItemSelected(item);</span><br></pre></td></tr></table></figure>
-      
-    </div>
-    
-    <div>
       
         
-      
-    </div>
-
-    <div>
-      
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2016/04/19/Android是一种信仰/" rel="next" title="Android是一种信仰">
-                <i class="fa fa-chevron-left"></i> Android是一种信仰
-              </a>
-            
-          </div>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/04/27/Android自带抽屉布局及NavigationView的使用/" rel="prev" title="Android自带抽屉布局及NavigationView的使用">
-                Android自带抽屉布局及NavigationView的使用 <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
+        <div class="collection-title">
+          <h2 class="archive-year motion-element" id="archive-year-2016">2016</h2>
         </div>
       
+      
 
       
-      
-    </footer>
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h1 class="post-title">
+        
+            <a class="post-title-link" href="/2016/05/24/Android之开发常用颜色/" itemprop="url">
+              
+                <span itemprop="name">Android之开发常用颜色</span>
+              
+            </a>
+        
+      </h1>
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2016-05-24T14:44:30+08:00"
+              content="2016-05-24" >
+          05-24
+        </time>
+      </div>
+
+    </header>
   </article>
 
 
 
-    <div class="post-spread">
-      
-    </div>
-  </div>
+    
+
+  </section>
+
+  
+
 
 
           </div>
@@ -350,10 +286,6 @@
 
 
           
-  <div class="comments" id="comments">
-    
-  </div>
-
 
         </div>
         
@@ -373,17 +305,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            Table of Contents
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview">
-            Overview
-          </li>
-        </ul>
-      
 
-      <section class="site-overview sidebar-panel ">
+      <section class="site-overview sidebar-panel  sidebar-panel-active ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.jpg"
@@ -428,17 +351,6 @@
 
       </section>
 
-      
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-            
-              
-            
-            
-              <p class="post-toc-empty">This post does not have a Table of Contents</p>
-            
-          </div>
-        </section>
       
 
     </div>
@@ -535,9 +447,11 @@
   
 
   
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
-
+  
+    <script type="text/javascript" id="motion.page.archive">
+      $('.archive-year').velocity('transition.slideLeftIn');
+    </script>
+  
 
 
   

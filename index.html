@@ -243,6 +243,108 @@
             
               
                 
+                <a class="post-title-link" href="/2016/05/25/设备端安全存储/" itemprop="url">
+                  设备端安全存储
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2016-05-25T15:13:51+08:00" content="2016-05-25">
+              2016-05-25
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>安卓平台提供了一种方便的存储偏好设置深知大文件的方式——SharedPreferences 接口。虽然这些设置已经被隐藏到一个隐蔽的路径了，但如果设备root了，这些数据还是有可能被获取到。</p>
+<p>因此，如果应用要保存敏感信息，在SharedPreference中就必须加密存储。一般有两种方式：</p>
+<p>使用一个密码库，来加密和解密SharedPreferences中存储的健和值。有很多JAVA的密码库可以使用，如： javax.crypto, Bouncycastle 和 Concealed</p>
+<p>使用SharedPreferences的包装类库（wrapper）。这些库对开发者非常方便，不用考虑算法选择之类的事情。但是，使用这些库可能会导致缺乏灵活性并且有些库也没有使用安全的算法，这将会导致敏感信息并没有被安全存储。其中一个这方面最常用的类库是SecurePrefences。在这个解决方案中，你可以采用下面的方式使用SecurePreferences，它继承于SharedPreferences。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SecurePreferences securePreferences = new SecurePreferences(context, &quot;MyPassword&quot;, null);</span><br></pre></td></tr></table></figure>
+<p>这两种对称加密算法，像AES（需要一个合适的key size）会引发另一个需要思考的问题：应该用什么密钥。确实如果我们使用一个静态密钥，这些设置可以通过反编译程序来破解。所以，最好的方法是在应用启动时让用户来输入。另一个选择是让用户使用指纹API  (API 23以后可以使用) ，它将会提供一个安全流畅的方式来鉴权。</p>
+<p>不幸的是，这些方法并不能适合每一个应用的用户体验。比如，如果我们打算在用户输入密码前显示一些被存储的加密信息，我们就不能使用这种加密系统。</p>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/05/25/设备端安全存储/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+    
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/05/24/Android之开发常用颜色/" itemprop="url">
                   Android之开发常用颜色
                 </a>
@@ -949,7 +1051,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">5</span>
+              <span class="site-state-item-count">6</span>
               <span class="site-state-item-name">posts</span>
             </a>
           </div>
